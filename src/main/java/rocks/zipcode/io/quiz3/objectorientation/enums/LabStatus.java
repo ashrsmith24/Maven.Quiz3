@@ -5,4 +5,7 @@ package rocks.zipcode.io.quiz3.objectorientation.enums;
  */
 public enum LabStatus {
     ADD_ENUMERATIONS_HERE;
+    enum Status {
+        PENDING, INCOMPLETE, COMPLETE;
+    }
 }

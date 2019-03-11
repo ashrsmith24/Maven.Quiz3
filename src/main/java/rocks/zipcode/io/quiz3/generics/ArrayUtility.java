@@ -8,6 +8,8 @@ import java.util.function.Function;
 public class ArrayUtility<SomeType> {
     private final SomeType[] array;
 
+
+
     public ArrayUtility(SomeType[] array) {
         this.array = array;
     }
@@ -16,12 +18,21 @@ public class ArrayUtility<SomeType> {
         return null;
     }
 
+
     public SomeType findEvenOccurringValue() {
         return null;
     }
 
     public Integer getNumberOfOccurrences(SomeType valueToEvaluate) {
-        return null;
+       int count = 0;
+        for (SomeType el: array){
+            if(el.equals(valueToEvaluate)){
+                count++;
+            }
+        }
+        return count;
+
+
     }
 
     public SomeType[] filter(Function<SomeType, Boolean> predicate) {
